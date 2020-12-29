@@ -1,0 +1,8 @@
+public boolean deleteEquipment2(int id)  {
+        for (Equipment toCheck : mainStorage) {
+            if (toCheck.getEquipmentNumber() == id) {
+                check = true;
+                mainStorage.remove(toCheck.getEquipmentNumber());
+            }
+        }   return check;
+    }
